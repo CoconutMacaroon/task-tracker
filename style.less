@@ -1,0 +1,58 @@
+@text-color: #ebebeb;
+@text-margin: 6px;
+
+body {
+    background-color: #121212;
+    color: @text-color;
+
+    // dark themed scroll bar
+    color-scheme: dark;
+}
+/*
+.task-group {
+    background-color: #121212;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.task {
+    background-color: #1e1e1e;
+    margin: 10px;
+    display: inline-block;
+}
+*/
+
+h2 {
+    margin: @text-margin;
+}
+
+.task-group-holder {
+    // background-color: #333;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.task-group {
+    background-color: #1e1e1e;
+    margin: 10px;
+    width: 200px;
+
+    // todo: is this part actually needed?
+    /*
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;*/
+    flex: 0 0 auto;
+
+    border-radius: 4px;
+
+    padding: 12px;
+}
+
+.task {
+    background-color: #181818;
+    padding: 6px;
+}
